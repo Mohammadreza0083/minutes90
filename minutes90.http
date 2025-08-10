@@ -1,0 +1,6 @@
+@minutes90_HostAddress = http://localhost:5044
+
+GET {{minutes90_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
