@@ -18,7 +18,7 @@ namespace minutes90.Extensions
             });
             services.AddDbContext<AppDbContext>(opt =>
             {
-                opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
+                opt.UseNpgsql(configuration.GetConnectionString("DefaultConnection") ?? Environment.GetEnvironmentVariable("DefaultConnection"))
                     .EnableSensitiveDataLogging();
             });
             services.AddHttpClient();
