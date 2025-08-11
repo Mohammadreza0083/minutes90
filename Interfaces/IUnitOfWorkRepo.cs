@@ -3,6 +3,5 @@
     public interface IUnitOfWorkRepo
     {
         Task<bool> Complete();
-        IUserRepo UserRepository { get; }
     }
 }

@@ -20,5 +20,5 @@ namespace minutes90.Data.Config
                     .IsRequired();
         }
     }
-    }
+    
 }
